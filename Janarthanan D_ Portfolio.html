@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Janarthanan D. | Software Developer Portfolio</title>
+<meta name="description" content="Computer Science Engineering student with hands-on projects in software development, AI workflows, IoT, and web technologies.">
+<meta property="og:title" content="Janarthanan D. | Software Developer Portfolio">
+<meta property="og:description" content="Computer Science Engineering student with hands-on projects in software development, AI workflows, IoT, and web technologies.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#08090D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238B5CF6'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EJD%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#08090D;--bg2:#11131A;--card:#151720;--p:#8B5CF6;--s:#38BDF8;--t:#F5F5F7;--t2:#A1A1AA;--b:#262833;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:64px;scroll-behavior:smooth;height:auto;-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:var(--s)}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,8vw,3.5rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,5vw,2rem)}
+p{margin:0 0 1em}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-top:1px solid var(--b)}
+.eyebrow{color:var(--p);font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.mut{color:var(--t2)}
+:focus-visible{outline:3px solid var(--s);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:8px;border:1px solid var(--b);background:transparent;color:var(--t);font:inherit;font-weight:600;text-decoration:none;cursor:pointer}
+.btn.pri{background:var(--p);border-color:var(--p);color:#fff}
+.btn:hover{border-color:var(--p)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--b)}
+nav{display:flex;align-items:center;justify-content:space-between;min-height:56px}
+.logo{font-weight:700;color:var(--t);text-decoration:none;font-size:1.1rem;min-height:44px;display:flex;align-items:center}
+.logo span{color:var(--p)}
+#menu{display:none;position:absolute;top:56px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--b);padding:8px 20px}
+#menu.open{display:block}
+#menu a,.links a{display:flex;align-items:center;min-height:44px;color:var(--t);text-decoration:none}
+.tg{min-width:44px;min-height:44px;background:none;border:1px solid var(--b);border-radius:8px;color:var(--t);font-size:1.25rem;cursor:pointer}
+.links{display:none}
+@media(min-width:800px){.tg{display:none}#menu{display:none!important}.links{display:flex;gap:8px}.links a{padding:0 10px;color:var(--t2)}.links a:hover{color:var(--t)}}
+.hero{padding:48px 0 56px;border:0;display:grid;gap:32px}
+.hero h1 em{font-style:normal;color:var(--p)}
+.hero .lead{font-size:1.1rem;color:var(--t2);max-width:560px}
+.hero svg{width:100%;max-width:320px;height:auto;justify-self:center}
+@media(min-width:800px){.hero{grid-template-columns:1.3fr 1fr;align-items:center}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{padding:6px 12px;border:1px solid var(--b);border-radius:999px;background:var(--bg2);font-size:.9rem}
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:20px}
+.card h3{font-size:1.1rem}
+.skills h3{font-size:.95rem;color:var(--t2);font-weight:600}
+.proj{display:flex;flex-direction:column}
+.proj svg{width:100%;height:auto;max-height:110px;background:var(--bg2);border-radius:8px;margin-bottom:14px}
+.proj .cat{color:var(--s);font-size:.85rem;margin-bottom:6px}
+.proj .chips{margin:6px 0 16px}
+.proj .chips li{font-size:.8rem;padding:3px 10px}
+.proj .btn{margin-top:auto;align-self:flex-start}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:4px;border:1px solid var(--p);color:#C4B5FD;margin:0 6px 8px 0}
+.st{font-size:.9rem;color:var(--t2);margin-bottom:10px}
+dialog{width:min(720px,calc(100% - 24px));max-height:calc(100% - 24px);padding:0;border:1px solid var(--b);border-radius:12px;background:var(--bg2);color:var(--t)}
+dialog::backdrop{background:rgba(0,0,0,.8)}
+.dh{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 20px;background:var(--bg2);border-bottom:1px solid var(--b)}
+.dh h3{margin:0;font-size:1.05rem}
+.db{padding:16px 20px 24px}
+.db h4{color:var(--p);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin:18px 0 6px}
+.db ol,.db ul{margin:0;padding-left:20px}
+.db li{margin-bottom:4px}
+.ct a.big{display:flex;align-items:center;min-height:48px;word-break:break-word}
+footer{border-top:1px solid var(--b);padding:28px 0;font-size:.9rem;color:var(--t2)}
+footer .row{gap:4px 16px;margin-top:8px}
+footer a{display:inline-flex;align-items:center;min-height:44px}
+</style>
+</head>
+<body>
+<header><div class="w"><nav aria-label="Main">
+<a class="logo" href="#home" aria-label="Janarthanan D., home">J<span>D</span></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+<button class="tg" id="tg" aria-expanded="false" aria-controls="menu" aria-label="Open menu">☰</button>
+</nav></div>
+<div id="menu"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+</header>
+<main>
+<div class="w"><section class="hero" id="home">
+<div>
+<p class="eyebrow">Janarthanan D. · Software Developer Aspirant</p>
+<h1>Building Practical Solutions <em>Through Code.</em></h1>
+<p class="lead">Computer Science Engineering student focused on software development, AI-driven applications, automation, and real-world problem solving.</p>
+<div class="row"><a class="btn pri" href="#projects">Explore My Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="row" style="margin-top:8px"><a href="https://github.com/janarthanan-d" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a><a href="https://www.linkedin.com/in/Janarthanan-D21" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a></div>
+</div>
+<svg viewBox="0 0 240 200" role="img" aria-label="Abstract diagram of connected software components" fill="none" stroke-width="2"><g stroke="#262833"><path d="M120 100L50 40M120 100L190 40M120 100L50 160M120 100L190 160"/></g><rect x="90" y="75" width="60" height="50" rx="8" fill="#151720" stroke="#8B5CF6"/><text x="120" y="105" fill="#F5F5F7" font-size="14" font-family="monospace" text-anchor="middle">&lt;/&gt;</text><rect x="25" y="20" width="50" height="40" rx="6" fill="#151720" stroke="#38BDF8"/><rect x="165" y="20" width="50" height="40" rx="6" fill="#151720" stroke="#38BDF8"/><rect x="25" y="140" width="50" height="40" rx="6" fill="#151720" stroke="#38BDF8"/><rect x="165" y="140" width="50" height="40" rx="6" fill="#151720" stroke="#8B5CF6"/></svg>
+</section></div>
+
+<div class="w"><section id="about">
+<p class="eyebrow">About</p><h2>A student developer who learns by building</h2>
+<p class="mut" style="max-width:720px">I'm a Computer Science Engineering student passionate about software development, artificial intelligence, automation, and building practical technology solutions. I enjoy turning real-world problems into useful applications and exploring technologies through hands-on projects. I'm looking for opportunities to contribute to a development team, learn from experienced engineers, and build meaningful software.</p>
+<h3>What I Bring</h3>
+<ul class="chips"><li>Hands-on project development</li><li>Curiosity and continuous learning</li><li>Interest in solving practical problems</li><li>Willingness to collaborate</li><li>A problem-solving mindset</li></ul>
+</section></div>
+
+<div class="w"><section id="skills" class="skills">
+<p class="eyebrow">Technical Skills</p><h2>Tools I work with</h2>
+<div class="grid c2">
+<div class="card"><h3>Used in projects</h3><ul class="chips"><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>FastAPI</li><li>Arduino</li><li>Tesseract.js</li><li>GitHub</li></ul></div>
+<div class="card"><h3>Languages &amp; fundamentals</h3><ul class="chips"><li>C</li><li>Python</li></ul><h3 style="margin-top:16px">Domain workflows</h3><ul class="chips"><li>Remote sensing &amp; GIS (SylvaSense)</li></ul></div>
+</div>
+<p class="mut" style="margin-top:16px;font-size:.9rem">Skills are grouped by how I have used them, not by percentages.</p>
+</section></div>
+
+<div class="w"><section id="projects">
+<p class="eyebrow">Projects</p><h2>Featured work</h2>
+<p class="mut">Five projects, each described with its real status. Tap “View Details” for the workflow and limitations.</p>
+<div class="grid c2" id="pf"></div>
+<div class="grid c3" id="pr" style="margin-top:16px"></div>
+</section></div>
+
+<div class="w"><section id="education">
+<p class="eyebrow">Education</p><h2>Education, credentials &amp; activities</h2>
+<div class="grid c2">
+<div class="card"><h3>B.E. Computer Science and Engineering</h3><p class="mut" style="margin:0">IFET College of Engineering<br>2024–2028 · CGPA 8.2</p></div>
+<div class="card"><h3>Credentials &amp; activities</h3><ul style="margin:0;padding-left:20px" class="mut"><li>Introduction to Networks — Cisco (coursework)</li><li>Smart India Hackathon — participant</li></ul></div>
+</div>
+</section></div>
+
+<div class="w"><section id="contact" class="ct">
+<p class="eyebrow">Contact</p><h2>Let's Build Something Meaningful.</h2>
+<p class="mut" style="max-width:640px">I'm open to software development internships, IT opportunities, collaborative projects, and opportunities to grow as a developer.</p>
+<div class="grid c2">
+<div class="card">
+<a class="big" href="mailto:janarthanan2061@gmail.com">janarthanan2061@gmail.com</a>
+<a class="big" href="tel:+919342612039">+91 93426 12039</a>
+</div>
+<div class="card">
+<a class="big" href="https://www.linkedin.com/in/Janarthanan-D21" target="_blank" rel="noopener noreferrer">LinkedIn: Janarthanan-D21</a>
+<a class="big" href="https://github.com/janarthanan-d" target="_blank" rel="noopener noreferrer">GitHub: janarthanan-d</a>
+</div>
+</div>
+</section></div>
+</main>
+<footer><div class="w">
+<strong style="color:var(--t)">Janarthanan D.</strong> · Software Developer Aspirant
+<nav aria-label="Footer" class="row"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a><a href="https://github.com/janarthanan-d" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/Janarthanan-D21" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:janarthanan2061@gmail.com">Email</a></nav>
+<p style="margin:8px 0 0">© <span id="yr">2026</span> Janarthanan D.</p>
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"><div class="dh"><h3 id="dt"></h3><button class="btn" id="cl" aria-label="Close project details">Close</button></div><div class="db" id="dbody"></div></dialog>
+
+<script>
+var P=[
+{n:"SylvaSense — Forest Mapping and Carbon Estimation",cat:"AI | Remote Sensing | Geospatial Technology",st:"Project · frontend on Vercel, backend on Render",f:1,c:"#22C55E",
+d:"A forest-monitoring project that analyzes forest areas using remote-sensing data, AI-based assessment workflows, and geospatial visualization.",
+tech:["Remote sensing","GIS","AI workflows","Vercel","Render"],
+ov:"SylvaSense analyzes a selected forest area and presents the results through a GIS dashboard.",
+pr:"Forest monitoring involves processing environmental data to understand forest structure, estimate biomass and carbon storage, and identify changes over time.",
+ap:"Remote-sensing inputs are fused across data types, AI-based canopy and tree identification feeds structure analysis, and biomass and carbon are estimated from that analysis.",
+wf:["Search for a forest area","Select an Area of Interest (AOI)","Load remote-sensing data","Perform multimodal data fusion","AI-based canopy and tree identification","Analyze forest structure","Estimate above-ground biomass (AGB)","Estimate carbon storage","Perform forest change detection","Display results through a GIS dashboard"],
+arch:"Frontend deployed on Vercel; backend deployed on Render.",
+use:"Supports understanding forest structure, biomass, carbon storage, and change over time.",
+im:"Frontend and backend are deployed. No accuracy figures, carbon savings, dataset sizes, or scientific validation are claimed.",
+ls:"Combining several data sources in one workflow and connecting a backend to a map-based dashboard.",
+v:'<path d="M0 90h240" stroke="#22C55E" opacity=".4"/><g fill="#22C55E"><path d="M40 90l15-45 15 45z"/><path d="M85 90l20-60 20 60z"/><path d="M140 90l15-40 15 40z"/><path d="M185 90l12-30 12 30z" opacity=".6"/></g>'},
+{n:"VoicePath — Tamil-English Voice-Based Skill Extraction MVP",cat:"AI | Speech Technology | Accessibility | Social Impact",st:"MVP",f:1,c:"#38BDF8",
+d:"A voice-first application that extracts practical skills from natural Tamil or English speech and connects them with relevant opportunities or schemes.",
+tech:["Python","FastAPI","HTML","CSS","JavaScript","Speech-to-text","Text-to-speech"],
+ov:"VoicePath aims to make opportunity discovery more accessible for people who may struggle with text-heavy interfaces.",
+pr:"Digital opportunity and scheme discovery is often text-heavy. VoicePath lets people describe their work in their own words, in Tamil or English.",
+ap:"Speech is recorded with start/stop controls and transcribed. Skills are extracted from the description, then matched against a district-level scheme and opportunity dataset. Example: describing motorcycle repair should map to two-wheeler repair and match opportunities in the available dataset.",
+wf:["Record speech (start/stop)","Transcribe Tamil or English speech","Extract practical skills from the description","Map everyday wording to recognizable skills","Match skills against the district-level dataset","Respond in a voice-oriented experience"],
+arch:"Python and FastAPI backend with an HTML, CSS, and JavaScript front end, using speech-to-text and text-to-speech.",
+use:"Accessibility: voice interaction for users who find text interfaces difficult.",
+im:"Presented as an MVP. Not every speech-recognition, language-detection, experience-extraction, or scheme-matching feature is claimed to be fully working or production-ready. Matching is limited to the available dataset.",
+ls:"Designing for voice-first use and for multiple languages.",
+v:'<g fill="#38BDF8"><rect x="30" y="50" width="8" height="30" rx="4"/><rect x="50" y="35" width="8" height="60" rx="4"/><rect x="70" y="20" width="8" height="90" rx="4"/><rect x="90" y="40" width="8" height="50" rx="4"/><rect x="110" y="25" width="8" height="80" rx="4"/><rect x="130" y="45" width="8" height="40" rx="4"/><rect x="150" y="55" width="8" height="20" rx="4"/></g><text x="190" y="72" fill="#8B5CF6" font-size="26">அ</text>'},
+{n:"Smart Water Tank Level Monitoring and Automation System",cat:"IoT | Embedded Systems | Hardware-Software Integration",st:"Hardware prototype",c:"#38BDF8",
+d:"A prototype that measures water level and controls a pump automatically using an ultrasonic sensor, microcontroller, and relay.",
+tech:["Arduino Uno","HC-SR04","Relay module","DC pump","18650 battery"],
+ov:"A hardware prototype that measures the water level and switches a pump through a relay.",
+pr:"Manually checking a tank and switching a pump on and off is inconvenient; this prototype explores automating that.",
+ap:"The HC-SR04 measures the distance from the sensor to the water surface. With a configured tank height of 24 cm, the reading is interpreted as a water level, and programmed logic drives the pump through the relay.",
+wf:["Measure sensor-to-water distance","Convert the reading to a level using the 24 cm tank height","Apply control logic","Switch the pump via the relay"],
+arch:"Arduino Uno reads the sensor and drives the relay, which switches the DC pump. Powered with an 18650 battery.",
+use:"Demonstrates sensor integration, embedded programming, automation logic, hardware troubleshooting, and debugging.",
+im:"A prototype. No industrial deployment, flawless operation, or verified water savings are claimed.",
+ls:"Combining physical hardware with embedded code, and debugging across both.",
+v:'<rect x="150" y="30" width="60" height="70" fill="none" stroke="#38BDF8" stroke-width="2"/><rect x="152" y="62" width="56" height="36" fill="#38BDF8" opacity=".4"/><rect x="165" y="10" width="30" height="14" fill="#8B5CF6"/><rect x="20" y="40" width="50" height="40" fill="none" stroke="#8B5CF6" stroke-width="2"/><rect x="85" y="50" width="30" height="20" fill="none" stroke="#A1A1AA" stroke-width="2"/><path d="M70 60h15M115 60h20v-30M180 24v6" fill="none" stroke="#A1A1AA"/>'},
+{n:"Krishi Sakhi — AI-Based Farming Assistant",cat:"Agriculture | Digital Solutions | AI Concept",st:"Concept · HTML/CSS interface implemented",c:"#84CC16",
+d:"A farming-assistant concept aimed at making agricultural information more accessible through a simple digital interface.",
+tech:["HTML","CSS"],
+ov:"Krishi Sakhi is a concept for a simple digital interface that makes agricultural information easier to reach.",
+pr:"Farmers may find it hard to access useful agricultural information in an easy-to-use form.",
+ap:"The implemented part is a simple interface built with HTML and CSS. Intelligent assistance is the intended direction, not a built feature.",
+wf:["Implemented: HTML/CSS interface","Planned: intelligent assistance (not built)"],
+arch:"Static HTML and CSS front end.",
+use:"Making agricultural digital assistance easier to access.",
+im:"Only the interface is implemented. There is no trained AI model, weather integration, disease detection, dataset integration, voice assistant, or field testing.",
+ls:"Scoping a concept clearly and separating what is built from what is planned.",
+v:'<circle cx="200" cy="25" r="14" fill="#F59E0B" opacity=".8"/><path d="M0 100h240" stroke="#84CC16"/><g stroke="#84CC16" stroke-width="3" fill="none"><path d="M60 100V60M60 75l-14-12M60 68l14-12"/><path d="M110 100V50M110 70l-14-12M110 62l14-12"/><path d="M160 100V65M160 80l-14-12M160 74l14-12"/></g>'},
+{n:"Cutoff Calculator — TNEA and Medical Admissions",cat:"Web Development | OCR | Education Technology",st:"Project",c:"#F59E0B",
+d:"A web application designed to simplify cutoff calculation for TNEA engineering and medical admissions.",
+tech:["HTML","CSS","JavaScript","Tesseract.js"],
+ov:"A web app that provides an interface for cutoff-related calculations.",
+pr:"Calculating admission cutoffs by hand and typing in marks is slow and error-prone.",
+ap:"Where implemented, OCR (Tesseract.js) can read details from an uploaded image so they can be used as input to the calculation, reducing manual data entry.",
+wf:["Upload an image","Extract details with OCR","Use values as calculation input","Show the cutoff result"],
+arch:"Client-side HTML, CSS, and JavaScript with Tesseract.js for OCR.",
+use:"Making cutoff calculation more convenient for applicants.",
+im:"Working and planned features are not fully separated yet. No OCR accuracy figures, partnerships, endorsements, or user numbers are claimed.",
+ls:"Using OCR in the browser and feeding its output into a calculation.",
+v:'<rect x="30" y="15" width="70" height="90" rx="4" fill="none" stroke="#F59E0B" stroke-width="2"/><path d="M42 35h46M42 50h46M42 65h30" stroke="#A1A1AA" stroke-width="3"/><path d="M110 60h30" stroke="#8B5CF6" stroke-width="2"/><rect x="150" y="25" width="60" height="70" rx="4" fill="none" stroke="#38BDF8" stroke-width="2"/><path d="M162 45h36M162 60h36M162 75h36" stroke="#38BDF8" stroke-width="3"/>'}];
+function li(a){return a.map(function(x){return"<li>"+x+"</li>"}).join("")}
+function card(p,i){return'<article class="card proj"><svg viewBox="0 0 240 120" aria-hidden="true" focusable="false">'+p.v+'</svg>'+(p.f?'<span class="badge">Featured</span>':'')+'<p class="cat">'+p.cat+'</p><h3>'+p.n+'</h3><p class="st">Status: '+p.st+'</p><p class="mut">'+p.d+'</p><ul class="chips">'+li(p.tech)+'</ul><button class="btn" data-i="'+i+'" aria-haspopup="dialog">View Details<span class="sr" style="position:absolute;left:-9999px"> for '+p.n+'</span></button></article>'}
+var f="",r="";P.forEach(function(p,i){if(p.f)f+=card(p,i);else r+=card(p,i)});
+document.getElementById("pf").innerHTML=f;document.getElementById("pr").innerHTML=r;
+var dlg=document.getElementById("dlg"),last;
+function open(i){var p=P[i];last=document.activeElement;document.getElementById("dt").textContent=p.n;
+var h='<p class="st">'+p.cat+' · Status: '+p.st+'</p><h4>Overview</h4><p>'+p.ov+'</p><h4>Problem statement</h4><p>'+p.pr+'</p><h4>Technical approach</h4><p>'+p.ap+'</p><h4>Technology stack</h4><ul class="chips">'+li(p.tech)+'</ul><h4>Workflow</h4><ol>'+li(p.wf)+'</ol><h4>System architecture</h4><p>'+p.arch+'</p><h4>Use case</h4><p>'+p.use+'</p><h4>Current implementation and limitations</h4><p>'+p.im+'</p><h4>Lessons learned</h4><p>'+p.ls+'</p>';
+document.getElementById("dbody").innerHTML=h;document.getElementById("dbody").scrollTop=0;
+if(dlg.showModal)dlg.showModal();else dlg.setAttribute("open","")}
+document.addEventListener("click",function(e){var b=e.target.closest("[data-i]");if(b)open(+b.dataset.i);if(e.target===dlg)dlg.close()});
+document.getElementById("cl").onclick=function(){dlg.close()};
+dlg.addEventListener("close",function(){if(last)last.focus()});
+var tg=document.getElementById("tg"),m=document.getElementById("menu");
+function ct(o){m.classList.toggle("open",o);tg.setAttribute("aria-expanded",o);tg.textContent=o?"✕":"☰";tg.setAttribute("aria-label",o?"Close menu":"Open menu")}
+tg.onclick=function(){ct(!m.classList.contains("open"))};
+m.addEventListener("click",function(e){if(e.target.tagName==="A")ct(false)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")ct(false)});
+document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
